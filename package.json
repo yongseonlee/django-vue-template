@@ -6,7 +6,7 @@
   "scripts": {
     "manage": "DJANGO_SETTINGS_MODULE=server.settings.base python manage.py",
     "server": "yarn manage runserver",
-    "client": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "client": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --progress --config build/webpack.dev.conf.js",
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue client"
   },
