@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex'
+import { mapState } from 'vuex'
 
 export default {
   name: 'HelloWorld',
@@ -66,18 +66,10 @@ export default {
       user: state => state.user,
     }),
   },
-  methods: {
-    ...mapActions([
-      'getCurrentUser',
-    ]),
-  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App!',
     }
-  },
-  mounted () {
-    this.getCurrentUser()
   },
 }
 </script>
