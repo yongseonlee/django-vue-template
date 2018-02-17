@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.17.1",
+    "babel-polyfill": "^6.26.0",
     "bootstrap-vue": "^2.0.0-rc.1",
     "jquery": "^3.3.1",
     "toastr": "^2.1.4",
